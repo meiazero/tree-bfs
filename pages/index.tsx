@@ -49,9 +49,9 @@ export default function Home() {
   });
   const [node, setNode] = useState<TreeNodeDatum | undefined>();
 
-  const close = () => setNode(undefined);
+  const close = () => setNode(undefined); 
 
-  const handleNodeClick = (datum: TreeNodeDatum) => {
+  const handleNodeClick = (datum) => {
     setNode(datum);
   };
 
