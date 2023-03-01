@@ -8,6 +8,7 @@ import {
   TreeNodeDatum,
 } from "react-d3-tree/lib/types/types/common";
 import { v4 } from "uuid";
+import Credits from "./components/Credits";
 
 const Tree = dynamic(() => import("react-d3-tree"), {
   ssr: false,
@@ -114,6 +115,7 @@ export default function Home() {
           isOpen={Boolean(node)}
         />
       </Box>
+      <Credits />
     </Stack>
   );
 }
